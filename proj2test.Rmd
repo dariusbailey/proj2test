@@ -15,4 +15,10 @@ loadPkg = function(x) { if (!require(x,character.only=T, quietly =T)) { install.
 ```{r}
 smokers <- read.csv("smokersdata.csv")
 summary(smokers)
+str(smokers)
+```
+Sam adding histogram
+```{r}
+as.numeric(smokers$X.Smokers)
+hist(smokers$X.Smokers)
 ```
